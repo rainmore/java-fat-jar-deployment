@@ -1,14 +1,14 @@
 package au.com.rainmore;
 
-import java.util.logging.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class Application {
 
-    private static final Logger logger = Logger.getLogger(Application.class);
+    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-
-        System.exit(0);
+        System.out.println("Hello World!");
     }
 
 }
