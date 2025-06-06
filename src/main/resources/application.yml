@@ -1,0 +1,27 @@
+---
+# General Spring configuration
+spring:
+  application:
+    name: Java Fat Jar Deployment
+  main:
+    banner-mode: "off"
+    log-startup-info: false
+  output:
+    ansi:
+      enabled: detect
+  jackson:
+    default-property-inclusion: ALWAYS
+    deserialization:
+      fail-on-unknown-properties: false   # Allow unexpected JSON properties in requests – they will be silently ignored.
+    serialization:
+      write-dates-as-timestamps: false    # We want Java 8 date, and date-times, written as formatted strings like yyyy-MM-dd and not as JSON objects.
+  devtools:
+    add-properties: false
+    livereload:
+      enabled: false
+    restart:
+      enabled: false
+
+# Configuration for Logback.
+logging:
+  config: classpath:logback.xml
