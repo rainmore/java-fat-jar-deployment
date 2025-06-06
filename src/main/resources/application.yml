@@ -25,3 +25,7 @@ spring:
 # Configuration for Logback.
 logging:
   config: classpath:logback.xml
+
+# Schedular
+app:
+  scheduler: '*/30 * * * * *'
