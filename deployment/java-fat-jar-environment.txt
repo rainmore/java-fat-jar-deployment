@@ -1,0 +1,1 @@
+APP_LOGGING_PATH=/var/log/java-fat-jar

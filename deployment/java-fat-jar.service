@@ -1,0 +1,16 @@
+[Unit]
+Description=Java Fat Jar
+After=syslog.target
+
+[Service]
+User=root
+ExecStart=/usr/bin/java -jar /opt/java-fat-jar/java-fat-jar-${version}.jar --app.scheduler="*/5 * * * * *"
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+EnvironmentFile=/opt/java-fat-jar/config/environment
+WorkingDirectory=/data
+
+[Install]
+WantedBy=multi-user.target

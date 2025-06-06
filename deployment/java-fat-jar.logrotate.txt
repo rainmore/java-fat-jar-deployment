@@ -1,0 +1,11 @@
+/var/log/java-fat-jar/java-fat-jar.log
+{
+	rotate 7
+	daily
+	copytruncate
+	minsize 10M
+	missingok
+	notifempty
+	compress
+	delaycompress
+}
