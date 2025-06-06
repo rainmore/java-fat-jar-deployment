@@ -1,4 +1,4 @@
-rootProject.name = "java-gradle-template"
+rootProject.name = "java-fat-jar-deployment"
 
 pluginManagement {
     plugins {

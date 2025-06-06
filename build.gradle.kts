@@ -5,7 +5,7 @@ plugins {
 
 group = "au.com.rainmore"
 version = "1.0.0"
-description = "Java Gradle Template"
+description = "Java Fat Jar Deployment"
 
 allprojects {
     repositories {

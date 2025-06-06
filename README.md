@@ -1,6 +1,6 @@
-#Java Gradle Template
+#Java Fat Jar Deployment
 
-Java Gradle Template for the new project. 
+Java Fat Jar Deployment is to allow the spring boot to be deployed as Linux service. 
 
 Run the application
 
