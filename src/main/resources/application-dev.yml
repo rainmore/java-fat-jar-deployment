@@ -1,0 +1,16 @@
+---
+# General Spring configuration
+spring:
+  output:
+    ansi:
+      enabled: always
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+# Configuration for Logback.
+logging:
+  config: classpath:logback-dev.xml
+
